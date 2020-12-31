@@ -21,6 +21,7 @@ public class SinhVienAPI {
 	@Autowired
 	private SinhVienDAO sinhVienDAO;
 	
+	// Lấy tất cá sinh viên
 	@GetMapping("/sinhvien")
 	public ResponseEntity<List<SinhVien>> getAllSinhVien() {
 		return ResponseEntity.ok(sinhVienDAO.getAll());
