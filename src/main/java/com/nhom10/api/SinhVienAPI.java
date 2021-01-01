@@ -26,7 +26,7 @@ public class SinhVienAPI {
 	public ResponseEntity<List<SinhVien>> getAllSinhVien() {
 		return ResponseEntity.ok(sinhVienDAO.getAll());
 	}
-	
+	// Lấy thông tin sinh viên theo mã sinh viên
 	@GetMapping("/sinhvien/detail")
 	public ResponseEntity<SinhVien> getSinhVienById(@RequestParam int id) {
 		return ResponseEntity.ok(sinhVienDAO.getById(id));
